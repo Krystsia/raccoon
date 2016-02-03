@@ -1,3 +1,3 @@
-docuemnt.onload = function(){
-    alert('yes');
+window.onload = function(){
+    alert('Hello')
 }
