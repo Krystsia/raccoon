@@ -1,4 +1,4 @@
 window.onload = function(){
-    alert('Hello')
+    alert(hello)
 }
-var hello = 'hello';
+var hello = 'It\'s my favorite';

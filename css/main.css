@@ -1,239 +1,161 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, .wrapper, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, .wrapper, section {
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-ol,
-ul {
-  list-style: none;
-}
+ol, ul {
+  list-style: none; }
 
-blockquote,
-q {
-  quotes: none;
-}
+blockquote, q {
+  quotes: none; }
 
-blockquote:before,
-q:before,
-blockquote:after,
-q:after {
+blockquote:before, blockquote:after {
   content: '';
-  content: none;
-}
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 a {
-  text-decoration: none;
-  color: black;
-}
+  color: grey;
+  text-decoration: none; }
 
-.center-vert {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+h1 {
+  font-size: 24px;
+  color: grey; }
 
-.center-hor {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.center {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
+h2 a {
+  color: #5c94ff;
+  text-transform: uppercase; }
 
 body {
-  font-family: sans-serif;
-  background: #fff;
-}
+  font-family: sans-serif; }
+
+header {
+  margin-bottom: 30px; }
 
 .brand {
   text-align: center;
-}
+  height: 50px; }
 
-nav {
-  background: #78a0eb;
-  height: 50px;
-}
+.navbar {
+  width: 100%;
+  background: #5c94ff;
+  text-align: center; }
+
+nav, .wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 40px; }
+  nav > *, .wrapper > * {
+    display: inline-block; }
 
 .navbar-brand {
-  display: none;
-}
+  float: left; }
 
 .navbar-toggle {
-  display: none;
-}
+  float: right; }
 
 .collapse {
   height: inherit;
   margin: 0 auto;
-  font-size: 0;
-}
-
-.collapse li {
-  height: inherit;
-  font-size: 16px;
-  display: inline-table;
-  position: relative;
-}
-
-.collapse li a {
-  height: inherit;
-  text-transform: uppercase;
-  display: table-cell;
-  vertical-align: middle;
-  color: white;
-  padding: 0 20px;
-}
-
-.collapse li:before {
-  content: "";
-  border: 10px solid transparent;
-  border-top-color: #a4bff2;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 100%;
-  display: none;
-}
-
-.collapse li:hover {
-  background: #a4bff2;
-}
-
-.collapse li:hover:before {
-  display: block;
-}
+  font-size: 0; }
+  .collapse li {
+    height: inherit;
+    font-size: 16px;
+    display: inline-table;
+    position: relative; }
+    .collapse li a {
+      height: inherit;
+      text-transform: uppercase;
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      padding: 0 20px; }
+    .collapse li:before {
+      content: "";
+      border: 10px solid transparent;
+      border-top-color: #8fb5ff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 100%;
+      display: none; }
+    .collapse li:hover {
+      background: #8fb5ff; }
+      .collapse li:hover:before {
+        display: block; }
 
 @media screen and (max-width: 1000px) {
   .collapse li {
-    display: block;
-  }
+    display: block; }
+    .collapse li a {
+      text-align: center; } }
+.wrapper {
+  height: auto; }
 
-  .collapse li a {
-    text-align: center;
-  }
-}
+aside {
+  box-sizing: border-box;
+  width: 30%;
+  float: right;
+  padding-left: 20px; }
+
+main {
+  width: 70%;
+  height: 3000px; }
+  main article h1 {
+    border-bottom: 1px solid grey; }
+  main article header {
+    margin-bottom: 0; }
+    main article header img {
+      width: 100%;
+      height: 300px; }
+
+.tagcloud {
+  font-size: 0px; }
+  .tagcloud a {
+    padding: 0 10px;
+    margin: 2px 0;
+    margin-right: 14px;
+    display: inline-table;
+    line-height: 20px;
+    background: #5c94ff;
+    color: white;
+    font-size: 16px;
+    position: relative; }
+    .tagcloud a:after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 0;
+      border: 10px solid transparent;
+      border-left-color: #5c94ff; }
+    .tagcloud a:before {
+      content: "";
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      position: absolute;
+      right: -3px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background: white; }
+
+/*# sourceMappingURL=main.css.map */

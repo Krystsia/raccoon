@@ -1,1 +1,1 @@
-var hello = 'hello';
+var hello = 'It\'s my favorite';
