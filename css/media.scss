@@ -1,0 +1,127 @@
+@media screen and (max-width: 1000px){
+    
+    .wrapper{
+        padding: 0 50px;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        display: none;
+        width: 100%;
+    }
+    .more__about{
+        float: left;
+    }
+    .social-icon{
+        position: absolute;
+        top: 50px;
+        right: -50px;
+    }
+    .social-icon__item{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px){
+    .navigation__toggle{
+        display: block;
+    }
+    .nav{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        z-index: 9998;
+        display: none;
+        }
+        .nav__item{
+            display: block;
+            width: 100%;
+        }
+            a{
+                display: block;
+                line-height: 40px;
+                padding: 0;
+                width: 100%;
+                border-bottom: 1px solid white;
+                text-align: center;
+                background: $secondary-bg;
+                color: $bg;
+                &:hover{
+                    background: lighten($bg,20%);
+                    &:before{
+                        display: none;
+                    }
+                }
+                
+            }
+           
+       
+        
+    
+    .wrapper{
+        padding: 0 10px;    
+    }
+    aside{
+        position: absolute;
+        top:50px;
+        left:0;
+        z-index: 10;
+    }
+    .more__item{
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 9999;
+        h2{
+            box-sizing: border-box;
+            border:2px solid $bg;
+            height: 40px;
+            width: 40px;
+            background: lighten($bg, 10%);
+            a{opacity: 0;
+          }
+        }
+        p, ul{
+            text-align: center;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            background: lighten($bg, 20%);
+        }
+    }
+    .more__item:nth-child(2) h2{
+        margin-left:  40px;
+    }
+    .more__item:nth-child(3) h2{
+        margin-left:  80px;
+    }
+    main{
+        article{
+            position: relative;
+        }
+        footer{
+            .social-icon{
+                top: 100%;
+                left: 0;
+                right: 0;
+                font-size: 0;
+                li{
+                    display: inline-block;
+                    width: 20%;
+                    font-size: 16px;
+                   
+                }
+            }
+        }
+    }
+    
+    } 
+    
+
+
