@@ -1,0 +1,65 @@
+.nav__list {
+    font-size: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    a{
+        
+        box-sizing: border-box;
+        position: relative;
+        height: $nav-height;
+        padding: 0 20px;
+        display: table-cell;
+        vertical-align: middle;
+        @include adjust-font-size-to(18px);
+        text-transform: uppercase;
+        color: white;
+        &:before {
+            @include arrow-down($blue-border, 13px);
+            display: none;
+        }
+        &:after {
+            @include arrow-down($blue-button, 10px);
+            display: none;
+        }
+        &:hover {
+            background: $blue-button;
+            &:before,
+            &:after {
+                display: block;
+            }
+        }
+    }
+}
+
+.nav__toggle{
+    position: relative;
+    float: right;
+    width: 30px;
+    height: $nav-height;
+    display: none;
+    background: $blue-nav;
+    button {
+        @include center;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+    span {
+        height: 3px;
+        width: 24px;
+        display: block;
+        background: white;
+        &+span {
+            margin-top: 3px;
+        }
+    }
+}
+
+.navbar-toggle__active {
+    &:after {
+        @include arrow-down($blue-light, 10px);
+    }
+}

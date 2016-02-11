@@ -8,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device=width, initial-scale=1.0" />
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css-factory/css/main.css">
 </head>
 
 <body>
     <!-- header можно использовать отдельно-->
     <header class="header">
-        <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+        <a href="#" class="header__logo"><img src="images/logo.png" alt="logo"></a>
         <a href="#" class="header__logo_additional"><img src="#" alt="logo"></a>
         <!-- nav можно использовать отдельно-->
         <div class="header__navigation nav">
@@ -39,33 +39,49 @@
     <div class="wrapper">
         <!-- aside можно использовать отдельно-->
         <aside class="aside">
-            <!-- Этот review можно использовать отдельно. Модификатор ставим на aside__item ведь модифицируется поведения блока относистельно существования его в теле родителя. Сам по себе все три блока одинаковы. Добираться до конкретного поведения review__button будем посредством вложенности (.aside__item_about>.review__button)-->
-            <div class="aside__item_about review">
-                <div class="review__button"></div>
-                <h2><a href="#">About</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem minus alias inventore labore, nulla provident quia, accusamus doloribus molestiae magni minima, repellendus voluptas vitae ab sint excepturi ducimus impedit similique.</p>
+            <!-- Этот review можно использовать отдельно.
+            Модификатор ставим на aside__item, ведь модифицируется
+            поведения блока относистельно существования
+            его в теле родителя. Сами по себе все три блока одинаковы. 
+            Добираться до конкретного поведения review__button будем
+            посредством вложенности (.aside__item_about>.review__button)-->
+            <div class="aside__item_about excerpt">
+                <div class="excerpt__button"></div>
+                <h2 class="excerpt__title"><a href="#">About</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Quidem minus alias inventore labore, nulla provident quia,
+                 accusamus doloribus molestiae magni minima,
+                 repellendus voluptas vitae ab sint excepturi ducimus impedit similique.</p>
             </div>
-            <div class="aside__item_shift review">
-                <div class="review__button"></div>
-                <h2><a href="#">Some shift</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi recusandae optio repellendus nobis dicta nisi neque, veritatis voluptates obcaecati non similique doloribus cum. Officiis, dicta dolor placeat sint ipsa consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis quisquam recusandae. Sapiente cumque soluta beatae, minus vero dolore libero magni deleniti labore aspernatur modi, in cum. Voluptatibus, quo, illum.</p>
+            <div class="aside__item_shift excerpt">
+                <div class="excerpt__button"></div>
+                <h2 class="excerpt__title"><a href="#">Some shift</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Excepturi recusandae optio repellendus nobis dicta nisi neque,
+                 veritatis voluptates obcaecati non similique doloribus cum.
+                 Officiis, dicta dolor placeat sint ipsa consectetur.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Voluptas, debitis quisquam recusandae.
+                 Sapiente cumque soluta beatae, minus vero dolore libero
+                 magni deleniti labore aspernatur modi,
+                 in cum. Voluptatibus, quo, illum.</p>
             </div>
-            <div class="aside__item_tags review">
-                <div class="review__button"></div>
+            <div class="aside__item_tags excerpt">
+                <div class="excerpt__button"></div>
                 <h2 class=""><a href="#"></a></h2>
 
                 <!-- блок tags-->
 
-                <ul class="review__list tags">
+                <ul class="excerpt__list tags">
                     <li class="tags__item"><a href="#">item1</a></li>
-                    <li class="tags__item"><a href="#">item2</a></li>
+                    <li class="tags__item"><a href="#">itemdfgdfg2</a></li>
                     <li class="tags__item"><a href="#">item3</a></li>
                     <li class="tags__item"><a href="#">item4</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
-                    <li class="tags__item"><a href="#">item5</a></li>
+                    <li class="tags__item"><a href="#">itemdfg5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
                     <li class="tags__item"><a href="#">item5</a></li>
@@ -76,7 +92,7 @@
             <!-- блок article-->
             <article class="article">
                 <div class="article__header ">
-                    <a href="#"><img src="img/12.jpg" alt="" class="article__img"></a>
+                    <a href="#"><img src="images/12.jpg" alt="" class="article__img"></a>
                     <h3 class="article__title"><a href="#">Article title</a></h3>
                 </div>
 
@@ -87,14 +103,28 @@
                     </div>
                     <!-- блок socials-->
                     <ul class="article__socials socials">
-                        <li class="socials__item_fb"><a href="#"><span>18</span></a></li>
-                        <li class="socials__item_gp"><a href="#"><span>3</span></a></li>
-                        <li class="socials__item_tw"><a href="#"><span>1</span></a></li>
-                        <li class="socials__item_vk"><a href="#"><span>14</span></a></li>
-                        <li class="socials__item_yn"><a href="#"><span>1</span></a></li>
+                        <li class="socials__item socials__item_fb">
+                            <a href="#"><span>18</span></a>
+                        </li>
+                        <li class="socials__item socials__item_gp">
+                            <a href="#"><span>3</span></a>
+                        </li>
+                        <li class="socials__item socials__item_tw">
+                            <a href="#"><span>1</span></a>
+                        </li>
+                        <li class="socials__item socials__item_vk">
+                            <a href="#"><span>14</span></a>
+                        </li>
+                        <li class="socials__item socials__item_yn">
+                            <a href="#"><span>1</span></a>
+                        </li>
                     </ul>
                 </div>
-                <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit rem corporis ipsa excepturi alias aspernatur iusto inventore quibusdam asperiores labore quisquam officia, debitis placeat provident amet, ullam nostrum incidunt.</p>
+                <p class="article__content">Lorem ipsum dolor sit amet,
+                 consectetur adipisicing elit. Laudantium fugit rem
+                 corporis ipsa excepturi alias aspernatur iusto inventore
+                 quibusdam asperiores labore quisquam officia,
+                 debitis placeat provident amet, ullam nostrum incidunt.</p>
             </article>
         </main>
     </div>
