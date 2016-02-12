@@ -5,6 +5,7 @@ $blue-primary: #6794b7;
 $blue-nav: #6b9ad0;
 $blue-button: #7ca7d9;
 $blue-light: #e1eefc;
+
 $grey: #d5dde5;
 $color-font: #69747c;
 $blue-font: #6290b4;
@@ -16,7 +17,14 @@ $vk: #48729e;
 $yandex: #d83933;
 
 //sizing
-$nav-height: 54px;
+$nav-height: height(3);
 $nav-height-small: 40px;
 $wrapper-padding-media1: 60px;
 $wrapper-padding-media2: 10px;
+
+//alias
+
+$line: $base-line-height;
+
+//animation
+

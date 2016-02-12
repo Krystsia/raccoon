@@ -27,11 +27,11 @@
             </div>
             <nav class="nav__list">
                 <ul>
-                    <li class="nav__item"><a href="#">item1</a></li>
-                    <li class="nav__item"><a href="#">item2</a></li>
-                    <li class="nav__item"><a href="#">item3</a></li>
-                    <li class="nav__item"><a href="#">item4</a></li>
-                    <li class="nav__item"><a href="#">item5</a></li>
+                    <li class="nav__item"><a href="#">javascript</a></li>
+                    <li class="nav__item"><a href="#">css</a></li>
+                    <li class="nav__item nav__item_active"><a href="#">latest</a></li>
+                    <li class="nav__item"><a href="#">html</a></li>
+                    <li class="nav__item"><a href="#">design</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,16 +47,16 @@
             посредством вложенности (.aside__item_about>.review__button)-->
             <div class="aside__item_about excerpt">
                 <div class="excerpt__button"></div>
-                <h2 class="excerpt__title"><a href="#">About</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <h2 class="excerpt__title"><a href="#"><span>?</span>About</a></h2>
+                <p class="excerpt__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                  Quidem minus alias inventore labore, nulla provident quia,
                  accusamus doloribus molestiae magni minima,
                  repellendus voluptas vitae ab sint excepturi ducimus impedit similique.</p>
             </div>
             <div class="aside__item_shift excerpt">
                 <div class="excerpt__button"></div>
-                <h2 class="excerpt__title"><a href="#">Some shift</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <h2 class="excerpt__title"><a href="#"><span>!</span>Some shift</a></h2>
+                <p class="excerpt__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                  Excepturi recusandae optio repellendus nobis dicta nisi neque,
                  veritatis voluptates obcaecati non similique doloribus cum.
                  Officiis, dicta dolor placeat sint ipsa consectetur.
@@ -124,10 +124,52 @@
                  consectetur adipisicing elit. Laudantium fugit rem
                  corporis ipsa excepturi alias aspernatur iusto inventore
                  quibusdam asperiores labore quisquam officia,
+                 debitis placeat provident amet, ullam nostrum incidunt.Lorem ipsum dolor sit amet,
+                 consectetur adipisicing elit. Laudantium fugit rem
+                 corporis ipsa excepturi alias aspernatur iusto inventore
+                 quibusdam asperiores labore quisquam officia,
                  debitis placeat provident amet, ullam nostrum incidunt.</p>
             </article>
+            <article class="article">
+                <div class="article__header ">
+                    <a href="#"><img src="images/13.jpg" alt="" class="article__img"></a>
+                    <h3 class="article__title"><a href="#">Article title</a></h3>
+                </div>
+
+                <div class="article__info">
+                    <div class="article__meta">
+                        <p class="article__date">22:58 Jan 01, 2014</p>
+                        <p class="article__author">by E.Hyperraccoon</p>
+                    </div>
+                    <!-- блок socials-->
+                    <ul class="article__socials socials">
+                        <li class="socials__item socials__item_fb">
+                            <a href="#"><span>18</span></a>
+                        </li>
+                        <li class="socials__item socials__item_gp">
+                            <a href="#"><span>3</span></a>
+                        </li>
+                        <li class="socials__item socials__item_tw">
+                            <a href="#"><span>1</span></a>
+                        </li>
+                        <li class="socials__item socials__item_vk">
+                            <a href="#"><span>14</span></a>
+                        </li>
+                        <li class="socials__item socials__item_yn">
+                            <a href="#"><span>1</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="article__content">Lorem ipsum dolor sit amet,
+                 consectetur adipisicing elit. Laudantium fugit rem
+                 corporis ipsa excepturi alias aspernatur iusto inventore
+                 quibusdam asperiores labore quisquam officia,
+                 debitis placeat provident amet, ullam nostrum incidunt.</p>
+            </article>
+            <div div class="loader"><div class="loader__spinner"><span></span></div></div>
         </main>
     </div>
+    
 
     <!--[if lt IE 9]>
     <script src = js/libs/html5shiv/es5-shim.min.js></script>

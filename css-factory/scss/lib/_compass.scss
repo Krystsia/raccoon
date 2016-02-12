@@ -1,16 +1,16 @@
 @import 'compass/typography';
 
-$base-font-size: 12px !global;
+$base-font-size: 12px;
 $base-line-height: 18px;
 $rhythm-unit: "rem";
 $rem-with-px-fallback: "true";
+$default-rhythm-border-width: 1px;
+$default-rhythm-border-style: solid;
+
 
 @include establish-baseline;
 
-
-main{
-   
-   @include establish-baseline; 
-   //@include debug-vertical-alignment;
+//dev tools
+body{
+    //@include debug-vertical-alignment;
 }
-

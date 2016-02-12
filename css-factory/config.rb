@@ -15,6 +15,6 @@ output_style = :expanded
 srelative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = true
+line_comments = false
 
 

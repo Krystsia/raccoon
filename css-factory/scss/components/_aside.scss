@@ -1,54 +1,61 @@
 
 .excerpt{
-    margin-bottom: 20px;
+    margin-bottom: height(1.5);
 }
 .excerpt__title{
-   
-    border-bottom: 5px solid $blue-primary;
-    @include adjust-leading-to(1.55);
-    @include margin-trailer(1);
+    $border-width: 4px;
     position: relative;
-    padding-left: 40px;
-    &:before{
-        left: 0;
-        content: "";
+    padding-left: height(1.5)+10px;
+    border-bottom: $border-width solid $blue-primary;
+    line-height: height(1.5) - $border-width;
+    @include margin-trailer(1);
+    span{
         position: absolute;
+        left: 0;
         height: 100%;
-        width: 30px;
+        width: height(1.5);
+        text-align: center;
+        color: white;
         background: $blue-primary;
     }
 }
+.excerpt__content{
+    text-align: justify;
+    @include hyphens(none);
+}
 .tags {
     font-size: 0px;
+    
+   
 }
 
 .tags__item {
-    display: inline-table;
-    margin: 2px 0;
+    display: inline-block;
     padding-right: 14px;
-    a {
+    
+    a{
         position: relative;
         display: block;
-        margin: 2px 0;
-        margin-right: 14px;
+        margin-right: 8px;
         padding: 0 10px;
-        line-height: 18px;
+        @include adjust-font-size-to($base-font-size);
+        @include adjust-leading-to(1);
+        @include margin-trailer(0.5);
         background: $blue-primary;
         color: white;
-        font-size: 16px;
         &:after {
             content: "";
             position: absolute;
-            right: -17px;
+            right: - height();
             top: 0;
-            border: 9px solid transparent;
+            border: height(0.5) solid transparent;
             border-left-color: $blue-primary;
         }
         &:before {
             content: "";
             position: absolute;
             @include center-ver;
-            z-index: 9997;
+            z-index: 1;
             right: -3px;
             height: 6px;
             width: 6px;

@@ -1,3 +1,10 @@
+.nav {
+    width: 100%;
+    height: $nav-height;
+    background: $blue-nav;
+    text-align: center;
+    box-shadow: 0 2px $blue-border;
+}
 .nav__list {
     font-size: 0;
 }
@@ -5,14 +12,12 @@
 .nav__item {
     display: inline-block;
     a{
-        
         box-sizing: border-box;
         position: relative;
-        height: $nav-height;
         padding: 0 20px;
         display: table-cell;
-        vertical-align: middle;
         @include adjust-font-size-to(18px);
+        @include adjust-leading-to(3);
         text-transform: uppercase;
         color: white;
         &:before {
@@ -20,7 +25,6 @@
             display: none;
         }
         &:after {
-            @include arrow-down($blue-button, 10px);
             display: none;
         }
         &:hover {
@@ -29,7 +33,20 @@
             &:after {
                 display: block;
             }
+            &:after{
+                @include arrow-down($blue-button, 10px);
+            }
+            
         }
+    }
+}
+.nav__item_active{
+    a:before,
+    a:after {
+        display: block;
+    }
+    a:after{
+        @include arrow-down($blue-nav, 10px);
     }
 }
 

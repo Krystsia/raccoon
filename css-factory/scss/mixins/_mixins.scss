@@ -35,3 +35,8 @@
     border: $border-width solid transparent;
     border-top-color: $color;
 }
+
+
+@function height($number:1, $line: $base-line-height){
+    @return $number*$line;
+}
