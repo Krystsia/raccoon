@@ -1,0 +1,87 @@
+article {
+  @include margin-trailer(3);
+  /* 54px*/
+}
+
+.article__header {
+  position: relative;
+  @include adjust-leading-to(0);
+}
+
+.article__img {
+  width: 100%;
+  height: height(13);
+}
+%article-border{
+  border-bottom: 1px solid grey;
+}
+.article__title {
+  @include adjust-font-size-to(20px);
+  line-height: height(2)-1px;
+  @extend %article-border;
+}
+
+.article__info {
+  @include clearfix;
+  @extend %article-border;
+  @include margin-trailer(1);
+  &>* {
+    line-height: height(2)-1px;
+  }
+}
+
+.article__meta {
+  float: left;
+  &>p {
+    display: inline-block;
+    padding-left: height(2);
+    margin-right: height();
+  }
+}
+
+.article__date {
+  background: url(../../images/clock.png) no-repeat height() - 6px center;
+  @include background-size (12px);
+}
+
+.article__author {
+  background: url(../../images/leg.png) no-repeat height() - 4px center;
+  @include background-size(height()/2)
+}
+
+.socials {
+  float: right;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  a {
+    display: block;
+    width: 48px;
+    @include adjust-leading-to(1.5);
+    @include border-radius(3px);
+    @include clearfix;
+    color: white;
+    background: $grey;
+    span {
+      display: block;
+      float: right;
+      padding: 0 4px;
+    }
+  }
+}
+
+@each $key, $value in $social-background {
+  .socials__item_#{$key}{
+    a:hover {
+      background: $value;
+    }
+  } 
+}
+
+
+.article__content {
+  text-align: justify;
+  @include hyphens(none);
+}
