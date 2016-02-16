@@ -12,9 +12,11 @@ article {
   width: 100%;
   height: height(13);
 }
+
 %article-border{
   border-bottom: 1px solid grey;
 }
+
 .article__title {
   @include adjust-font-size-to(20px);
   line-height: height(2)-1px;
@@ -63,7 +65,7 @@ article {
     @include border-radius(3px);
     @include clearfix;
     color: white;
-    background: $grey;
+    background: color('grey');
     span {
       display: block;
       float: right;

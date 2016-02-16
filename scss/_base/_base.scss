@@ -1,0 +1,12 @@
+.wrapper {
+  @include container;
+}
+
+aside {
+  @include span(2 last);
+}
+
+main {
+  position: relative;
+  @include span(5);
+}

@@ -3,109 +3,27 @@
 @import '_SassyStrings.scss';
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
-@import 'lib/_compass';
-@import 'lib/_grids';
-
-
+@import '_vendor/_compass';
+@import '_vendor/_grids';
 
 //@import mixins & variables
-@import 'variables/_variables.scss';
-@import 'mixins/_mixins.scss';
+@import '_utils/_variables.scss';
+@import '_utils/_mixins.scss';
+@import '_utils/_function.scss';
 
 //@import components
-@import 'components/_navigation';
-@import 'components/_article';
-@import 'components/_aside';
-@import 'components/_misc';
-
-
-body{
-    font-family: sans-serif;
-    
-}
-a{
-    text-decoration: none;
-}
-h3{
-    a{
-        color: $color-font;
-    }
-}
-h2{
-    @include adjust-font-size-to(18px);
-    text-transform: uppercase;
-    a{
-        color: $blue-font;
-    }
-}
-.wrapper {
-    @include container;
-    
-}
-aside {
-   @include span(2 last);
-}
-
-main {
-    position: relative;
-    @include span(5);
-}
-
-//***************************//
+@import '_base/_typography.scss';
+@import '_base/_base.scss';
+@import '_base/_animation.scss';
+@import '_layout/_header.scss';
+@import '_layout/_sidebar.scss';
+@import '_components/_navigation';
+@import '_components/_article';
+@import '_components/_misc';
 
 
 
-.header {
-    margin-bottom: height(3);
-    text-align: center;
-    line-height: 0;
-}
-
-.header__logo {
-    display: inline-block;
-    @include rhythm-padding(1);
-    img {
-        height: 54px;
-    }
-}
-.header__logo_additional{
-    display: none;
-}
-
-
-.navigation__navigation_visible {
-    position: relative;
-    margin: 0 auto;
-}
-
-
-
-/*.header__logo_additional {
-    display: block;
-    position: absolute;
-    top: -100px;
-    opacity: 0;
-    outline: 1px solid red;
-}
-
-.header__logo_active {
-    animation: rise .4s linear forwards;
-}*/
-
-/*@keyframes rise {
-    to {
-        top: 0px;
-        opacity: 1;
-    }
-}*/
-
-
-
-
-
-
-
-
+//***********  This is the End  *************//
 
 
 

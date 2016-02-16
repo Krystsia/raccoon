@@ -1,9 +1,8 @@
 .nav {
-    width: 100%;
-    height: $nav-height;
-    background: $blue-nav;
+    min-height: height(3);
+    background: color('blue','lighter');
     text-align: center;
-    box-shadow: 0 2px $blue-border;
+    box-shadow: 0 2px color('blue','x-light');
 }
 .nav__list {
     font-size: 0;
@@ -21,20 +20,20 @@
         text-transform: uppercase;
         color: white;
         &:before {
-            @include arrow-down($blue-border, 13px);
+            @include arrow-down(color('blue', 'x-light'), 13px);
             display: none;
         }
         &:after {
             display: none;
         }
         &:hover {
-            background: $blue-button;
+            background: color('blue', 'light');
             &:before,
             &:after {
                 display: block;
             }
             &:after{
-                @include arrow-down($blue-button, 10px);
+                @include arrow-down(color('blue', 'light'), 10px);
             }
             
         }
@@ -46,7 +45,7 @@
         display: block;
     }
     a:after{
-        @include arrow-down($blue-nav, 10px);
+        @include arrow-down(color('blue','lighter'), 10px);
     }
 }
 
@@ -54,9 +53,9 @@
     position: relative;
     float: right;
     width: 30px;
-    height: $nav-height;
+    height: height(3);
     display: none;
-    background: $blue-nav;
+    background: color('blue','lighter');
     button {
         @include center;
         border: none;
@@ -77,6 +76,6 @@
 
 .navbar-toggle__active {
     &:after {
-        @include arrow-down($blue-light, 10px);
+        @include arrow-down(color('blue','super-x-light'), 10px);
     }
 }

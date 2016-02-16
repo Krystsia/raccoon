@@ -1,0 +1,37 @@
+//colors
+
+$palettes: (
+  'blue': (
+    'base': #6794b7,
+    'dark': #6290b4,
+    'x-dark': #69747c, 
+    'lighter': #6b9ad0,
+    'light': #7ca7d9,
+    'x-light': #c6defa,
+    'super-x-light': #e1eefc
+  ),
+  'grey': (
+    'base': #d5dde5,
+  )
+);
+$social-background: (
+  'fb': #3c5a98,
+  'gp': #c25234,
+  'tw': #00aced,
+  'vk': #48729e,
+  'yn': #d83933,
+);
+
+
+//sizing
+
+$wrapper-padding-media1: 60px;
+$wrapper-padding-media2: 10px;
+
+
+//alias
+
+$line: $base-line-height;
+
+
+

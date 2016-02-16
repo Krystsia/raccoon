@@ -1,0 +1,25 @@
+.header {
+  margin-bottom: height(3);
+  text-align: center;
+  line-height: 0;
+}
+
+.header__logo {
+  @include header-logo;
+}
+
+.header__logo_additional {
+  display: none;
+}
+
+/*.header__logo_additional {
+    display: block;
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+    outline: 1px solid red;
+}
+
+.header__logo_active {
+    animation: rise .4s linear forwards;
+}*/
